@@ -1,3 +1,9 @@
-<p>
-  contact works!
-</p>
+<div *ngFor="let contact of contactInfo">
+  <h3>{{contact.name}}</h3>
+  <p>{{contact.body}}</p>
+</div>
+
+<!-- Google Map -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25872.822972498194!2d-86.392951!3d35.846481!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x63aa38ccd4ca302a!2sColeman+Stearns+Ashley+D.+Stearns+Attorney+at+Law!5e0!3m2!1sen!2sus!4v1526251823954"
+  width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
