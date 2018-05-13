@@ -1,0 +1,11 @@
+.outline {
+  border: 1px solid red;
+}
+
+.logo-div {
+  margin: 2em 0;
+}
+
+img.logo-img {
+  width: 100%;
+}

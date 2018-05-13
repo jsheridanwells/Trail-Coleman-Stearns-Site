@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Trail, Coleman, and Stearns, PLLC';
+  public logoPath: string;
+
+  // tslint:disable-next-line:use-life-cycle-interface
+  ngOnInit() {
+    this.loadLogo();
+  }
+  loadLogo(): void {
+    this.logoPath = '../assets/img/logo.jpg';
+  }
 }
