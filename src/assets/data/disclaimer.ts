@@ -1,0 +1,2 @@
+// tslint:disable-next-line:max-line-length
+export const DisclaimerText: any = 'Under state law, we are required to inform you that this website is an advertisement. The content contained on this website is intended for informational purposes only and is not intended to constitute legal advice. Reading this website or contacting an attorney does not create an attorney-client relationship. If you need specific legal advice for a case or potential case, you should contact an attorney directly rather than relying on this website.';

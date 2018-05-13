@@ -1,15 +1,19 @@
-<div class="container">
+<div class="container-fluid">
+
   <div class="row">
     <div class="col-12 logo-div">
       <img [src]="logoPath" class="logo-img">
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-2 outline">
+  <div class="row m-1">
+    <div class="col-md-3 outline">
       <app-side-nav></app-side-nav>
     </div>
-    <div class="col-md-10 outline">
+    <div class="col-md-9 outline">
       <router-outlet></router-outlet>
     </div>
   </div>
 </div>
+<footer class="footer">
+  <app-footer></app-footer>
+</footer>

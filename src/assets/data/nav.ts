@@ -1,4 +1,4 @@
-import { NavItem } from '../../app/side-nav/nav-item'
+import { NavItem } from '../../app/side-nav/nav-item';
 
 export const NavItems: NavItem[] = [
   {

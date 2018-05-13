@@ -1,0 +1,10 @@
+ul.nav-menu {
+  list-style-type: none;
+}
+li {
+  margin: 2em 0;
+}
+
+a {
+  color: inherit;
+}

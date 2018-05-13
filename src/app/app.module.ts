@@ -5,12 +5,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
-import { MainComponent } from './main/main.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
 import { ContactComponent } from './contact/contact.component';
 import { BlogComponent } from './blog/blog.component';
+import { FooterComponent } from './footer/footer.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -34,12 +34,12 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     SideNavComponent,
-    MainComponent,
     HomeComponent,
     AboutComponent,
     ServicesComponent,
     ContactComponent,
-    BlogComponent
+    BlogComponent,
+    FooterComponent
   ],
   imports: [
     RouterModule.forRoot(
