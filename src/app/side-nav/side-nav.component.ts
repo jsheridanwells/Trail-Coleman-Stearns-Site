@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavService } from '../services/nav-service.service';
+import { NavItems } from '../../assets/data/nav';
 
 @Component({
   selector: 'app-side-nav',
@@ -8,13 +8,9 @@ import { NavService } from '../services/nav-service.service';
 })
 
 export class SideNavComponent implements OnInit {
-  navItems = [];
-  constructor(navService: NavService) {
-    navService.getNavItems().subscribe(
-      items => this.navItems = items,
-      error => console.error(error)
-    )
-  }
+
+  navItems = NavItems;
+  constructor() { }
 
   ngOnInit() {
 
