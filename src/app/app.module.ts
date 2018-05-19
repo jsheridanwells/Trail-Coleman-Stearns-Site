@@ -11,10 +11,13 @@ import { ServicesComponent } from './services/services.component';
 import { ContactComponent } from './contact/contact.component';
 import { BlogComponent } from './blog/blog.component';
 import { FooterComponent } from './footer/footer.component';
+import { AboutDetailComponent } from './about-detail/about-detail.component';
+import { AboutService } from './about.service';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'about/:id', component: AboutDetailComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'blog', component: BlogComponent },
@@ -39,7 +42,8 @@ const appRoutes: Routes = [
     ServicesComponent,
     ContactComponent,
     BlogComponent,
-    FooterComponent
+    FooterComponent,
+    AboutDetailComponent
   ],
   imports: [
     RouterModule.forRoot(
@@ -49,7 +53,7 @@ const appRoutes: Routes = [
     BrowserModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [AboutService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-
+import { RouterModule, Routes, ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -14,3 +13,4 @@ export class AboutComponent implements OnInit {
   }
 
 }
+
